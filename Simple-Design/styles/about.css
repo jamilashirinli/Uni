@@ -1,0 +1,482 @@
+/* intro start */
+
+.intro {
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro__subtitle {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.intro__subtitle span {
+    color: #BD7048;
+}
+
+.intro__title {
+    max-width: 950px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+    color: #060606;
+    margin-bottom: 100px;
+}
+
+.intro__img {
+    width: 100%;
+}
+
+/* intro end */
+
+/* concepts start */
+
+.concepts {
+    margin-bottom: 80px;
+}
+
+.concepts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.concepts-content{
+    margin-right: 30px;
+}
+
+.concepts__title {
+    max-width: 580px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+.concepts__title span {
+    color: #BD7048;
+}
+
+.concepts__text {
+    max-width: 580px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+/* concepts end */
+
+/* team start */
+
+.team{
+    margin-bottom: 100px;
+}
+
+.team__title-container {
+    text-align: right;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.team__title {
+    display: inline-block;
+    position: relative;
+    font-size: 43px;
+    line-height: 52px;
+    color: #000000;
+    text-align: right;
+    z-index: 2;
+    background-color: #fff;
+    padding-left: 30px;
+}
+
+.team__title span {
+    display: block;
+    color: #BD7048;
+}
+
+.team__title-container::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.swiper{
+    height: 70vh;
+    border-radius: 30px;
+}
+
+.swiper-slide{
+    height: 70vh;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    background-color: #fff;
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 50%;
+    box-shadow: 0px 15px 22px rgba(0, 0, 0, 0.1);
+    right: -10px;
+}
+
+.swiper-button-prev::after , .swiper-button-next::after{
+    display: none;
+}
+
+.swiper-button-next {
+    transform: rotate(180deg);
+}
+
+/* team end */
+
+/* team lead start */
+
+.team-lead{
+    margin-bottom: 65px;
+}
+
+.team-lead-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-lead__info {
+    max-width: 662px;
+}
+.team-lead__name {
+    font-size: 43px;
+    line-height: 52px;
+    color: #1B1B1B;
+    margin-bottom: 20px;
+}
+
+.team-lead__desc-container{
+    margin-bottom: 35px;
+}
+
+.team-lead__desc {
+    font-size: 20px;
+    line-height: 24px;
+    color: #7E7E7E;
+}
+
+.team-lead__texts{
+    padding-left: 30px;
+    list-style: disc;
+}
+
+.team-lead__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* team lead end */
+
+/* projects info start */
+
+.projects-info {
+    margin-bottom: 50px;
+}
+
+.projects-info__title-container {
+    position: relative;
+    margin-bottom: 45px;
+}
+.projects-info__title {
+    display: inline-block;
+    position: relative;
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: #363636;
+    z-index: 2;
+    background-color: #fff;
+    padding-left: 40px;
+}
+
+.projects-info__title-container::after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+}
+
+.projects-info__title span{
+    color: #BD7048;
+}
+
+.projects-info-container{
+    position: relative;
+    cursor: pointer;
+    height: 66vh;
+    background: url('../images/video.jpg');
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play__video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #BD7048 0%, rgba(189, 112, 72, 0) 0.01%, #BD7048 100%);
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.video__wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.projects-info-container:hover .play__video{
+    transform: translateY(-15px);
+}
+
+/* projects info end */
+
+@media (max-width: 1080px){
+    .concepts__title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .team-lead-container{
+        flex-direction: column-reverse;
+    }
+
+    .team-lead__info{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 960px){
+    .intro{
+        padding: 20px 0;
+    }
+    
+    .intro__subtitle{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .intro__title{
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+
+    .concepts-container{
+        flex-direction: column;
+    }
+
+    .concepts__title{
+        max-width: 90%;
+    }
+
+    .concepts__text{
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .team{
+        margin-bottom: 50px;
+    }
+    
+    .team__title-container {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    
+    .team__title {
+        text-align: left;
+    }
+    
+    .team__title-container::before {
+        display: none;
+    }
+    
+    .swiper{
+        height: 70vh;
+        border-radius: 30px;
+    }
+    
+    .swiper-slide img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+    
+    .swiper-button-prev, .swiper-button-next{
+        background-color: #fff;
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 50%;
+        box-shadow: 0px 15px 22px rgba(0, 0, 0, 0.1);
+        right: -10px;
+    }
+    
+    .team__title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .projects-info {
+        margin-bottom: 50px;
+    }
+    
+    .projects-info__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+    .projects-info__title-container::after{
+        display: none;
+    }
+    
+    .projects-info-container{
+        position: relative;
+        cursor: pointer;
+        height: 50vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .concepts__text{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: none !important;
+    }
+
+    .projects-info-container{
+        height: 40vh;
+    }
+
+    .play__video{
+        width: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .team__title{
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 0;
+    }
+
+    .swiper{
+        height: 50vh;
+        border-radius: 30px;
+    }
+
+    .team-lead__name{
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .team-lead__desc-container{
+        margin-bottom: 25px;
+    }
+
+    .team-lead__desc{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .team-lead__text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .projects-info__title{
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .intro__subtitle{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .intro__title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .concepts__title{
+        max-width: 100%;
+        font-size: 23px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    .concepts__text{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .swiper{
+        height: 40vh;
+        border-radius: 30px;
+    }
+
+ 
+}
+
+@media (max-width: 360px){
+
+    .swiper{
+        height: 30vh;
+    }
+
+    .team__title{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .projects-info-container{
+        height: 35vh;
+    }
+}
